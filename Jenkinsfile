@@ -3,15 +3,23 @@ pipeline{
         label 'java-slave'
     }
     stages{
-        stage('hostname'){
+        stage('Build') {
             steps{
-                sh 'hostname -i'
+                echo "This is a build stage"
             }
         }
-        stage('NewStage') {
-            steps{
-                echo "Welcome to Pipelines"
+        stage('groovycodestage'){
+            steps {
+                script {
+                    def course = 'k8s']
+
+                    if(course == "k8s")
+                    println("thanks for enrolling to k8s course")
+                    else 
+                    println("Do Enroll to K8S")
+                }
             }
         }
     }
+
 }
