@@ -11,7 +11,7 @@ pipeline{
         stage('groovycodestage'){
             steps {
                 script {
-                    def course = 'k8s']
+                    def course = "k8s"]
 
                     if(course == "k8s")
                     println("thanks for enrolling to k8s course")
